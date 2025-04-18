@@ -46,19 +46,19 @@ const CartItem: React.FC<CartItemProps> = ({ name, image, cost, quantity }) => {
                 className="rounded-md object-cover"
             />
             <div className="flex-1">
-                <h3 className="text-lg font-semibold">{name}</h3>
+                <h3 className="text-lg font-semibold text-green-700">{name}</h3>
                 <p className="text-gray-600">${cost.toFixed(2)}</p>
                 <div className="flex items-center gap-2 mt-2">
                     <button
                         onClick={handleDecrement}
-                        className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
+                        className="px-3 py-1 bg-gray-900 text-red-400 rounded hover:bg-gray-800 hover:text-red-500"
                     >
                         -
                     </button>
-                    <span className="px-2 font-medium">{quantity}</span>
+                    <span className="px-2 font-medium text-green-700">{quantity}</span>
                     <button
                         onClick={handleIncrement}
-                        className="px-2 py-1 bg-gray-200 rounded hover:bg-gray-300"
+                        className="px-3 py-1 bg-gray-900 text-green-400 rounded hover:bg-gray-800 hover:text-green-500"
                     >
                         +
                     </button>
